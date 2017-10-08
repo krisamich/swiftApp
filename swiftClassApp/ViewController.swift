@@ -11,17 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
     
-    @IBAction func helloB(_ sender: Any) {
-        theLabel.text = "Hello Kristen!"
-    }
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func buttonsButton(_ sender: Any) {
-        tapCount = tapCount + 1
-        if tapCount >= 10
-        {
-            theLabel.text = "You've pressed the button 10 or more times!"
-        }
+        print(text1.text!)
+        print(text2.text!)
     }
     
     
